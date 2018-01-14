@@ -1,6 +1,6 @@
 fileFormatVersion: 2
 guid: 2e20b480708446d418f6af21cd2b6116
-timeCreated: 1510008034
+timeCreated: 1515101905
 licenseType: Free
 TextureImporter:
   fileIDToRecycleName:
@@ -77,9 +77,9 @@ TextureImporter:
       name: Hunter_Idle_0
       rect:
         serializedVersion: 2
-        x: 43
+        x: 21
         y: 164
-        width: 54
+        width: 76
         height: 55
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
@@ -90,9 +90,9 @@ TextureImporter:
       name: Hunter_Idle_1
       rect:
         serializedVersion: 2
-        x: 171
+        x: 149
         y: 164
-        width: 54
+        width: 76
         height: 55
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
@@ -103,9 +103,9 @@ TextureImporter:
       name: Hunter_Idle_2
       rect:
         serializedVersion: 2
-        x: 43
+        x: 21
         y: 36
-        width: 54
+        width: 76
         height: 55
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
@@ -116,9 +116,9 @@ TextureImporter:
       name: Hunter_Idle_3
       rect:
         serializedVersion: 2
-        x: 171
+        x: 149
         y: 36
-        width: 54
+        width: 76
         height: 55
       alignment: 0
       pivot: {x: 0.5, y: 0.5}

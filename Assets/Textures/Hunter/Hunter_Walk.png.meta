@@ -1,6 +1,6 @@
 fileFormatVersion: 2
 guid: 9ef841119f6e4894291b910c3c4735be
-timeCreated: 1510009033
+timeCreated: 1515101960
 licenseType: Free
 TextureImporter:
   fileIDToRecycleName:
@@ -80,9 +80,9 @@ TextureImporter:
       name: Hunter_Walk_0
       rect:
         serializedVersion: 2
-        x: 43
+        x: 21
         y: 164
-        width: 54
+        width: 76
         height: 55
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
@@ -93,9 +93,9 @@ TextureImporter:
       name: Hunter_Walk_1
       rect:
         serializedVersion: 2
-        x: 172
+        x: 150
         y: 163
-        width: 54
+        width: 76
         height: 55
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
@@ -106,9 +106,9 @@ TextureImporter:
       name: Hunter_Walk_2
       rect:
         serializedVersion: 2
-        x: 301
+        x: 279
         y: 164
-        width: 54
+        width: 76
         height: 55
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
@@ -119,9 +119,9 @@ TextureImporter:
       name: Hunter_Walk_3
       rect:
         serializedVersion: 2
-        x: 429
+        x: 407
         y: 164
-        width: 54
+        width: 76
         height: 55
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
@@ -132,9 +132,9 @@ TextureImporter:
       name: Hunter_Walk_4
       rect:
         serializedVersion: 2
-        x: 45
+        x: 23
         y: 36
-        width: 54
+        width: 76
         height: 55
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
@@ -145,9 +145,9 @@ TextureImporter:
       name: Hunter_Walk_5
       rect:
         serializedVersion: 2
-        x: 173
+        x: 151
         y: 36
-        width: 54
+        width: 76
         height: 55
       alignment: 0
       pivot: {x: 0.5, y: 0.5}

@@ -1,6 +1,6 @@
 fileFormatVersion: 2
 guid: cb662b07231a5f54fb20f93006164889
-timeCreated: 1510009967
+timeCreated: 1515101925
 licenseType: Free
 TextureImporter:
   fileIDToRecycleName:
@@ -76,9 +76,9 @@ TextureImporter:
       name: Hunter_Jump_0
       rect:
         serializedVersion: 2
-        x: 43
+        x: 21
         y: 164
-        width: 54
+        width: 76
         height: 55
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
@@ -89,9 +89,9 @@ TextureImporter:
       name: Hunter_Jump_1
       rect:
         serializedVersion: 2
-        x: 171
+        x: 149
         y: 164
-        width: 54
+        width: 76
         height: 55
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
@@ -102,9 +102,9 @@ TextureImporter:
       name: Hunter_Jump_2
       rect:
         serializedVersion: 2
-        x: 43
+        x: 21
         y: 36
-        width: 54
+        width: 76
         height: 55
       alignment: 0
       pivot: {x: 0.5, y: 0.5}

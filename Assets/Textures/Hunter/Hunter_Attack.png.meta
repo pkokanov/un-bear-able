@@ -1,6 +1,6 @@
 fileFormatVersion: 2
 guid: f3bd6ae0963671641b50f1adec609b41
-timeCreated: 1510007942
+timeCreated: 1515101864
 licenseType: Free
 TextureImporter:
   fileIDToRecycleName:
@@ -79,9 +79,9 @@ TextureImporter:
       name: Hunter_Attack_0
       rect:
         serializedVersion: 2
-        x: 43
+        x: 21
         y: 36
-        width: 54
+        width: 76
         height: 55
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
@@ -92,9 +92,9 @@ TextureImporter:
       name: Hunter_Attack_1
       rect:
         serializedVersion: 2
-        x: 171
+        x: 149
         y: 36
-        width: 54
+        width: 76
         height: 55
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
@@ -105,9 +105,9 @@ TextureImporter:
       name: Hunter_Attack_2
       rect:
         serializedVersion: 2
-        x: 298
+        x: 276
         y: 36
-        width: 54
+        width: 76
         height: 55
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
@@ -118,9 +118,9 @@ TextureImporter:
       name: Hunter_Attack_3
       rect:
         serializedVersion: 2
-        x: 427
+        x: 405
         y: 36
-        width: 54
+        width: 76
         height: 55
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
@@ -131,9 +131,9 @@ TextureImporter:
       name: Hunter_Attack_4
       rect:
         serializedVersion: 2
-        x: 555
+        x: 533
         y: 36
-        width: 54
+        width: 76
         height: 55
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
@@ -144,9 +144,9 @@ TextureImporter:
       name: Hunter_Attack_5
       rect:
         serializedVersion: 2
-        x: 683
+        x: 661
         y: 36
-        width: 54
+        width: 76
         height: 55
       alignment: 0
       pivot: {x: 0.5, y: 0.5}

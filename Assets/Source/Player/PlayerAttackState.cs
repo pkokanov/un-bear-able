@@ -6,29 +6,43 @@ using UnityEngine;
 
 public class PlayerAttackState : PlayerState {
     private float elapsedTime;
+    private bool checkedHit;
 
     public PlayerAttackState(PlayerScript player) : base(player) {
         elapsedTime = 0;
+        checkedHit = false;
     }
 
     public override void UpdateState() {
-        if(elapsedTime > player.attackTime) {  
-            player.ChangeState(player.StatesDict[PlayerScript.States.Idle]);
+        if(elapsedTime > owner.attackTime) {  
+            owner.StateMachine.ChangeState(owner.StatesDict[PlayerScript.States.Idle]);
         }
     }
 
     public override void Update() {
         elapsedTime += Time.deltaTime;
+        if (elapsedTime >= owner.attackTime / 2 && !checkedHit) {
+            RaycastHit hit;
+            bool bearHit = Physics.Linecast(owner.transform.position, owner.swordTransform.position, out hit, owner.attackingLayer);
+            if (bearHit) {
+                Damageable damageable = hit.transform.GetComponent<Damageable>();
+                if (damageable != null) {
+                    damageable.OnHit(owner.transform.right);
+                }
+            }
+            checkedHit = true;
+        }
     }
 
     public override void OnExit() {
         Debug.Log("Exited PlayerAttackState");
-        player.StartAttackCooldown();
+        owner.StartAttackCooldown();
     }
 
     public override void OnEnter() {
-        elapsedTime = 0;  
         Debug.Log("Entering PlayerAttackState");
-        player.animator.SetTrigger("hunterAttack");
+        elapsedTime = 0;
+        checkedHit = false;
+        owner.animator.SetTrigger("hunterAttack");
     }
 }

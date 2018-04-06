@@ -1,0 +1,468 @@
+fileFormatVersion: 2
+guid: ddae453e2b67f994db4115c4b652e729
+timeCreated: 1522007634
+licenseType: Free
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: Trap_Active_0
+    21300002: Trap_Active_1
+    21300004: Trap_Active_2
+    21300006: Trap_Active_3
+    21300008: Trap_Active_4
+    21300010: Trap_Active_5
+    21300012: Trap_Active_6
+    21300014: Trap_Active_7
+    21300016: Trap_Active_8
+    21300018: Trap_Active_9
+    21300020: Trap_Active_10
+    21300022: Trap_Active_11
+    21300024: Trap_Active_12
+    21300026: Trap_Active_13
+    21300028: Trap_Active_14
+    21300030: Trap_Active_15
+    21300032: Trap_Active_16
+    21300034: Trap_Active_17
+    21300036: Trap_Active_18
+    21300038: Trap_Active_19
+    21300040: Trap_Active_20
+    21300042: Trap_Active_21
+    21300044: Trap_Active_22
+    21300046: Trap_Active_23
+    21300048: Trap_Active_24
+    21300050: Trap_Active_25
+    21300052: Trap_Active_26
+    21300054: Trap_Active_27
+  serializedVersion: 4
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    filterMode: 0
+    aniso: -1
+    mipBias: -1
+    wrapMode: 0
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 100
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  platformSettings:
+  - buildTarget: DefaultTexturePlatform
+    maxTextureSize: 8192
+    textureFormat: -1
+    textureCompression: 2
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+  - buildTarget: Standalone
+    maxTextureSize: 8192
+    textureFormat: -1
+    textureCompression: 2
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Trap_Active_0
+      rect:
+        serializedVersion: 2
+        x: 31
+        y: 436
+        width: 67
+        height: 37
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Trap_Active_1
+      rect:
+        serializedVersion: 2
+        x: 159
+        y: 436
+        width: 67
+        height: 37
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Trap_Active_2
+      rect:
+        serializedVersion: 2
+        x: 287
+        y: 436
+        width: 67
+        height: 37
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Trap_Active_3
+      rect:
+        serializedVersion: 2
+        x: 415
+        y: 436
+        width: 67
+        height: 37
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Trap_Active_4
+      rect:
+        serializedVersion: 2
+        x: 543
+        y: 436
+        width: 67
+        height: 37
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Trap_Active_5
+      rect:
+        serializedVersion: 2
+        x: 671
+        y: 436
+        width: 67
+        height: 37
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Trap_Active_6
+      rect:
+        serializedVersion: 2
+        x: 799
+        y: 436
+        width: 67
+        height: 37
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Trap_Active_7
+      rect:
+        serializedVersion: 2
+        x: 927
+        y: 436
+        width: 67
+        height: 37
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Trap_Active_8
+      rect:
+        serializedVersion: 2
+        x: 31
+        y: 308
+        width: 67
+        height: 37
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Trap_Active_9
+      rect:
+        serializedVersion: 2
+        x: 159
+        y: 308
+        width: 67
+        height: 37
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Trap_Active_10
+      rect:
+        serializedVersion: 2
+        x: 287
+        y: 308
+        width: 67
+        height: 37
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Trap_Active_11
+      rect:
+        serializedVersion: 2
+        x: 415
+        y: 308
+        width: 67
+        height: 37
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Trap_Active_12
+      rect:
+        serializedVersion: 2
+        x: 543
+        y: 308
+        width: 67
+        height: 37
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Trap_Active_13
+      rect:
+        serializedVersion: 2
+        x: 671
+        y: 308
+        width: 67
+        height: 37
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Trap_Active_14
+      rect:
+        serializedVersion: 2
+        x: 799
+        y: 308
+        width: 67
+        height: 37
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Trap_Active_15
+      rect:
+        serializedVersion: 2
+        x: 927
+        y: 308
+        width: 67
+        height: 37
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Trap_Active_16
+      rect:
+        serializedVersion: 2
+        x: 31
+        y: 180
+        width: 67
+        height: 37
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Trap_Active_17
+      rect:
+        serializedVersion: 2
+        x: 159
+        y: 180
+        width: 67
+        height: 37
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Trap_Active_18
+      rect:
+        serializedVersion: 2
+        x: 287
+        y: 180
+        width: 67
+        height: 37
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Trap_Active_19
+      rect:
+        serializedVersion: 2
+        x: 415
+        y: 180
+        width: 67
+        height: 37
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Trap_Active_20
+      rect:
+        serializedVersion: 2
+        x: 543
+        y: 180
+        width: 67
+        height: 37
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Trap_Active_21
+      rect:
+        serializedVersion: 2
+        x: 671
+        y: 180
+        width: 67
+        height: 37
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Trap_Active_22
+      rect:
+        serializedVersion: 2
+        x: 799
+        y: 180
+        width: 67
+        height: 37
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Trap_Active_23
+      rect:
+        serializedVersion: 2
+        x: 927
+        y: 180
+        width: 67
+        height: 37
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Trap_Active_24
+      rect:
+        serializedVersion: 2
+        x: 31
+        y: 52
+        width: 67
+        height: 37
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Trap_Active_25
+      rect:
+        serializedVersion: 2
+        x: 159
+        y: 52
+        width: 67
+        height: 37
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Trap_Active_26
+      rect:
+        serializedVersion: 2
+        x: 287
+        y: 52
+        width: 67
+        height: 37
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Trap_Active_27
+      rect:
+        serializedVersion: 2
+        x: 415
+        y: 52
+        width: 67
+        height: 37
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    outline: []
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

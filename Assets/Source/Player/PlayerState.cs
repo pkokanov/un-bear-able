@@ -4,44 +4,10 @@ using System.Linq;
 using System.Text;
 using UnityEngine;
 
-public class PlayerState: State {
+public class PlayerState: State<PlayerScript> {
 
-    protected PlayerScript player;
-
-    public PlayerState(PlayerScript player) {
-        this.player = player;
-    }
-
-    public virtual void UpdateState() {
-
-    }
-
-    virtual public void Update() {
-
-    }
-
-    public virtual void OnExit() {
-
-    }
-
-    public virtual void OnEnter() {
-
-    }
-
-    public virtual void OnCollisionEnter(Collision2D collision) {
-
-    }
-
-    public virtual void OnCollisionExit(Collision2D collision) {
-
-    }
-
-    public virtual void OnTriggerEnter(Collider2D collider) {
-
-    }
-
-    public virtual void OnTriggerExit(Collider2D collider) {
-
+    public PlayerState(PlayerScript player):base(player) {
+        this.owner = player;
     }
 
     public static bool PlayerMovementInput() {

@@ -1,13 +1,25 @@
 fileFormatVersion: 2
-guid: 5b5b387ba65ddb84cbbc3a783768af0d
-timeCreated: 1516394404
+guid: 941a47024ae5d3e42bf78c59bf68b908
+timeCreated: 1516311144
 licenseType: Free
 TextureImporter:
   fileIDToRecycleName:
-    21300000: Bear_Walk_0
-    21300002: Bear_Walk_1
-    21300004: Bear_Walk_2
-    21300006: Bear_Walk_3
+    21300000: Hunter_Death_1
+    21300002: Hunter_Death_2
+    21300004: Hunter_Death_3
+    21300006: Hunter_Death_4
+    21300008: Hunter_Death_5
+    21300010: Hunter_Death_6
+    21300012: Hunter_Death_7
+    21300014: Hunter_Death_8
+    21300016: Hunter_Death_9
+    21300018: Hunter_Death_10
+    21300020: Hunter_Death_11
+    21300022: Hunter_Death_12
+    21300024: Hunter_Death_13
+    21300026: Hunter_Death_14
+    21300028: Hunter_Death_15
+    21300030: Hunter_Death_0
   serializedVersion: 4
   mipmaps:
     mipMapMode: 0
@@ -55,7 +67,7 @@ TextureImporter:
   textureFormatSet: 0
   platformSettings:
   - buildTarget: DefaultTexturePlatform
-    maxTextureSize: 2048
+    maxTextureSize: 8192
     textureFormat: -1
     textureCompression: 2
     compressionQuality: 50
@@ -63,63 +75,115 @@ TextureImporter:
     allowsAlphaSplitting: 0
     overridden: 0
   - buildTarget: Standalone
-    maxTextureSize: 2048
-    textureFormat: -1
+    maxTextureSize: 8192
+    textureFormat: 2
     textureCompression: 2
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
-    overridden: 0
+    overridden: 1
   spriteSheet:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Bear_Walk_0
+      name: Hunter_Death_0
       rect:
         serializedVersion: 2
-        x: 47
-        y: 168
-        width: 33
-        height: 39
+        x: 78
+        y: 353
+        width: 90
+        height: 55
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: Bear_Walk_1
+      name: Hunter_Death_1
       rect:
         serializedVersion: 2
-        x: 174
-        y: 168
-        width: 35
-        height: 39
+        x: 335
+        y: 351
+        width: 87
+        height: 53
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: Bear_Walk_2
+      name: Hunter_Death_2
       rect:
         serializedVersion: 2
-        x: 47
-        y: 40
-        width: 33
-        height: 39
+        x: 591
+        y: 351
+        width: 87
+        height: 53
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: Bear_Walk_3
+      name: Hunter_Death_3
       rect:
         serializedVersion: 2
-        x: 175
-        y: 40
-        width: 33
-        height: 39
+        x: 847
+        y: 349
+        width: 87
+        height: 53
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Hunter_Death_4
+      rect:
+        serializedVersion: 2
+        x: 79
+        y: 93
+        width: 87
+        height: 53
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Hunter_Death_5
+      rect:
+        serializedVersion: 2
+        x: 335
+        y: 91
+        width: 87
+        height: 57
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Hunter_Death_6
+      rect:
+        serializedVersion: 2
+        x: 591
+        y: 91
+        width: 87
+        height: 57
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Hunter_Death_7
+      rect:
+        serializedVersion: 2
+        x: 847
+        y: 91
+        width: 87
+        height: 57
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}

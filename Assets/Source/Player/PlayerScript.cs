@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class PlayerScript : MonoBehaviour {
+public class PlayerScript : MonoBehaviour, Damageable {
 
     public float speed;
     public float jumpSpeed;
@@ -11,6 +11,9 @@ public class PlayerScript : MonoBehaviour {
     public float attackCoolDown;
     public float height;
     public float width;
+    public LayerMask attackingLayer;
+    public Transform swordTransform;
+    public Transform shadowTransform;
     public Vector3 initialJumpForce;
     public Vector3 gravity;
     public Animator animator;
@@ -20,13 +23,22 @@ public class PlayerScript : MonoBehaviour {
     private Vector3 leftBoundary;
     private Vector3 rightBoundary;
 
+    private float attackRange;
     private bool attackDisabled;
 
     private Dictionary<States, PlayerState> statesDict;
-    private PlayerState currentState;
-    
+    private StateMachine<PlayerScript> stateMachine;
+
     public Dictionary<States, PlayerState> StatesDict {
         get { return statesDict; }
+    }
+
+    public StateMachine<PlayerScript> StateMachine {
+        get { return stateMachine; }
+    }
+
+    public float AttackRange {
+        get { return attackRange;  }
     }
 
     public bool AttackDisabled {
@@ -48,27 +60,43 @@ public class PlayerScript : MonoBehaviour {
         statesDict[States.Attack] = new PlayerAttackState(this);
         statesDict[States.JumpPrep] = new PlayerJumpPrepState (this);
         statesDict[States.Jumping] = new PlayerJumpingState(this);
+        stateMachine = new StateMachine<PlayerScript>();
+        stateMachine.ChangeState(statesDict[States.Idle]);
 
         attackDisabled = false;
-        currentState = statesDict[States.Idle];
 
         upperBoundary = GameObject.Find("/Ground/UpperBoundary").transform.position;
         lowerBoundary = GameObject.Find("/Ground/LowerBoundary").transform.position;
         leftBoundary = GameObject.Find("/Ground/LeftBoundary").transform.position;
         rightBoundary = GameObject.Find("/Ground/RightBoundary").transform.position;
+
+        attackRange = swordTransform.position.x - transform.position.x;
     }
+
     // Use this for initialization
     void Start() {
+        transform.position += new Vector3(0, 0, transform.position.y - transform.position.z - height/2);
     }
 
     // Update is called once per frame
     void Update() {
-        currentState.UpdateState();
-        currentState.Update();
+        stateMachine.Update();
     }
 
-    private void OnTriggerExit2D(Collider2D collision) {
-        Debug.Log("asdf");
+    public virtual void OnCollisionEnter(Collision collision) {
+        stateMachine.OnCollisionEnter(collision);
+    }
+
+    public virtual void OnCollisionExit(Collision collision) {
+        stateMachine.OnCollisionExit(collision);
+    }
+
+    public virtual void OnTriggerEnter(Collider collider) {
+        stateMachine.OnTriggerEnter(collider);
+    }
+
+    public virtual void OnTriggerExit(Collider collider) {
+        stateMachine.OnTriggerExit(collider);
     }
 
     IEnumerator AttackCooldownTimer() {
@@ -85,13 +113,6 @@ public class PlayerScript : MonoBehaviour {
         StartCoroutine("AttackCooldownTimer");
     }
 
-
-    public void ChangeState(PlayerState newState) {
-        this.currentState.OnExit();
-        this.currentState = newState;
-        this.currentState.OnEnter();
-    }
-
     public bool CanMoveHorizontally(float xDestination) {
         return xDestination - width > leftBoundary.x && xDestination + width < rightBoundary.x;
     }
@@ -100,4 +121,7 @@ public class PlayerScript : MonoBehaviour {
         return yDestination - height > lowerBoundary.y && yDestination - height < upperBoundary.y;
     }
 
+    public void OnHit(Vector3 hitDirection) {
+
+    }
 }

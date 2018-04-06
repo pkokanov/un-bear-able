@@ -9,8 +9,8 @@ public class PlayerJumpPrepState : PlayerState {
     }
 
     public override void UpdateState() {
-        if (player.animator.GetBool("isJumping")) {
-            player.ChangeState(player.StatesDict[PlayerScript.States.Jumping]);
+        if (owner.animator.GetBool("isJumping")) {
+            owner.StateMachine.ChangeState(owner.StatesDict[PlayerScript.States.Jumping]);
         }
     }
 
@@ -20,7 +20,7 @@ public class PlayerJumpPrepState : PlayerState {
 
     public override void OnEnter() {
         Debug.Log("Entered PlayerJumpPrepState");
-        player.animator.SetTrigger("hunterStartJump");
+        owner.animator.SetTrigger("hunterStartJump");
     }
 
     public override void OnExit() {

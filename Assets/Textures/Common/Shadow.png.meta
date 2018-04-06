@@ -1,13 +1,9 @@
 fileFormatVersion: 2
-guid: 5b5b387ba65ddb84cbbc3a783768af0d
-timeCreated: 1516394404
+guid: 1af4e0fe302dc254ab7f19b4f3f0a16d
+timeCreated: 1519469149
 licenseType: Free
 TextureImporter:
-  fileIDToRecycleName:
-    21300000: Bear_Walk_0
-    21300002: Bear_Walk_1
-    21300004: Bear_Walk_2
-    21300006: Bear_Walk_3
+  fileIDToRecycleName: {}
   serializedVersion: 4
   mipmaps:
     mipMapMode: 0
@@ -38,7 +34,7 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 2
+  spriteMode: 1
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -57,7 +53,7 @@ TextureImporter:
   - buildTarget: DefaultTexturePlatform
     maxTextureSize: 2048
     textureFormat: -1
-    textureCompression: 2
+    textureCompression: 1
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -65,66 +61,14 @@ TextureImporter:
   - buildTarget: Standalone
     maxTextureSize: 2048
     textureFormat: -1
-    textureCompression: 2
+    textureCompression: 1
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
     overridden: 0
   spriteSheet:
     serializedVersion: 2
-    sprites:
-    - serializedVersion: 2
-      name: Bear_Walk_0
-      rect:
-        serializedVersion: 2
-        x: 47
-        y: 168
-        width: 33
-        height: 39
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      tessellationDetail: 0
-    - serializedVersion: 2
-      name: Bear_Walk_1
-      rect:
-        serializedVersion: 2
-        x: 174
-        y: 168
-        width: 35
-        height: 39
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      tessellationDetail: 0
-    - serializedVersion: 2
-      name: Bear_Walk_2
-      rect:
-        serializedVersion: 2
-        x: 47
-        y: 40
-        width: 33
-        height: 39
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      tessellationDetail: 0
-    - serializedVersion: 2
-      name: Bear_Walk_3
-      rect:
-        serializedVersion: 2
-        x: 175
-        y: 40
-        width: 33
-        height: 39
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      tessellationDetail: 0
+    sprites: []
     outline: []
   spritePackingTag: 
   userData: 

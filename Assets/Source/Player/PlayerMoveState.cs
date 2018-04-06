@@ -1,22 +1,20 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
 using UnityEngine;
 
 public class PlayerMoveState : PlayerState {
+
     public PlayerMoveState(PlayerScript player) : base(player) {
     }
 
     public override void UpdateState() {
-        if (!Input.GetKey(KeyCode.LeftArrow) && !Input.GetKey(KeyCode.RightArrow) &&
-            !Input.GetKey(KeyCode.UpArrow) && !Input.GetKey(KeyCode.DownArrow) && 
+        if (!PlayerMovementInput() && 
             !Input.GetKey(KeyCode.Space) && !Input.GetKey(KeyCode.X)) {
-            player.ChangeState(player.StatesDict[PlayerScript.States.Idle]);
+            owner.StateMachine.ChangeState(owner.StatesDict[PlayerScript.States.Idle]);
         } else if (Input.GetKey(KeyCode.Space)) {
-            player.ChangeState(player.StatesDict[PlayerScript.States.JumpPrep]);
-        } else if (Input.GetKey(KeyCode.X) && !player.AttackDisabled) {
-            player.ChangeState(player.StatesDict[PlayerScript.States.Attack]);
+            owner.StateMachine.ChangeState(owner.StatesDict[PlayerScript.States.JumpPrep]);
+        } else if (Input.GetKey(KeyCode.X) && !owner.AttackDisabled) {
+            owner.StateMachine.ChangeState(owner.StatesDict[PlayerScript.States.Attack]);
         }
     }
 
@@ -24,47 +22,47 @@ public class PlayerMoveState : PlayerState {
         float xMovement = 0;
         float yMovement = 0;
         if (Input.GetKey(KeyCode.LeftArrow)) {
-            xMovement = 0 - player.speed * Time.deltaTime;
-            if (player.transform.rotation.y == 0) {
-                player.transform.rotation = Quaternion.Euler(0, 180, 0);
+            xMovement = 0 - owner.speed * Time.deltaTime;
+            if (owner.transform.rotation.y == 0) {
+                owner.transform.rotation = Quaternion.Euler(0, 180, 0);
             }
         }
 
         if (Input.GetKey(KeyCode.RightArrow)) {
-            xMovement = player.speed * Time.deltaTime;
-            if (player.transform.rotation.y == 1) {
-                player.transform.rotation = Quaternion.Euler(0, 0, 0);
+            xMovement = owner.speed * Time.deltaTime;
+            if (owner.transform.rotation.y == 1) {
+                owner.transform.rotation = Quaternion.Euler(0, 0, 0);
             }
         }
 
         if (Input.GetKey(KeyCode.UpArrow)) {
-            yMovement = player.speed * Time.deltaTime;
+            yMovement = owner.speed * Time.deltaTime;
         }
 
         if (Input.GetKey(KeyCode.DownArrow)) {
-            yMovement = 0 - player.speed * Time.deltaTime;
+            yMovement = 0 - owner.speed * Time.deltaTime;
         }
 
-        if (!player.CanMoveHorizontally (player.transform.position.x + xMovement)) {
+        if (!owner.CanMoveHorizontally (owner.transform.position.x + xMovement)) {
             xMovement = 0;
         }
 
-        if (!player.CanMoveVertically(player.transform.position.y + yMovement)) {
+        if (!owner.CanMoveVertically(owner.transform.position.y + yMovement)) {
             yMovement = 0;
         }
 
-        Vector3 destination = player.transform.position + new Vector3(xMovement, yMovement);
-        player.transform.position = Vector3.Lerp(player.transform.position, destination, player.lerpFactor);
+        Vector3 destination = owner.transform.position + new Vector3(xMovement, yMovement, yMovement);
+        owner.transform.position = Vector3.Lerp(owner.transform.position, destination, owner.lerpFactor);
     }
 
     public override void OnEnter() {
         Debug.Log("Entered PlayerMoveState");
-        player.animator.SetBool("isWalking", true);
+        owner.animator.SetBool("isWalking", true);
     }
 
     public override void OnExit() {
         Debug.Log("Exited PlayerMoveState");
-        player.animator.SetBool("isWalking", false);
+        owner.animator.SetBool("isWalking", false);
     }
 
 }

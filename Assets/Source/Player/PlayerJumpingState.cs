@@ -16,22 +16,27 @@ public class PlayerJumpingState : PlayerState {
     }
 
     public override void UpdateState() {
-        if (player.transform.position.y <= startingY) {
-            player.transform.position = new Vector3(player.transform.position.x, startingY);
-            player.ChangeState(player.StatesDict[PlayerScript.States.Idle]);
+        if (owner.transform.position.y <= startingY) {
+            owner.transform.position = new Vector3(owner.transform.position.x, startingY, owner.transform.position.z);
+            owner.StateMachine.ChangeState(owner.StatesDict[PlayerScript.States.Idle]);
         }
     }
 
     public override void Update() {
-        Vector3 destination = player.transform.position + jumpForce + new Vector3(xMomentum * player.jumpSpeed * Time.deltaTime, 0);
-        player.transform.position = Vector3.Lerp(player.transform.position, destination, player.lerpFactor);
-        jumpForce -= player.gravity;
+        Vector3 initialShadowPos = owner.shadowTransform.position;
+        Vector3 destination = owner.transform.position + jumpForce + new Vector3(xMomentum * owner.jumpSpeed * Time.deltaTime, 0);
+        if(!owner.CanMoveHorizontally(destination.x)) {
+            destination.x = owner.transform.position.x;
+        }
+        owner.transform.position = Vector3.Lerp(owner.transform.position, destination, owner.lerpFactor);
+        jumpForce -= owner.gravity;
+        owner.shadowTransform.position = new Vector3(owner.shadowTransform.position.x, initialShadowPos.y, owner.shadowTransform.position.z);
     }
 
     public override void OnEnter() {
         Debug.Log("Entered PlayerJumpState");
-        startingY = player.transform.position.y;
-        jumpForce = player.initialJumpForce;
+        startingY = owner.transform.position.y;
+        jumpForce = owner.initialJumpForce;
         xMomentum = 0;
         if(Input.GetKey(KeyCode.LeftArrow)) {
             xMomentum--;
@@ -43,6 +48,6 @@ public class PlayerJumpingState : PlayerState {
 
     public override void OnExit() {
         Debug.Log("Exited PlayerJumpState");
-        player.animator.SetBool("isJumping", false);
+        owner.animator.SetBool("isJumping", false);
     }
 }

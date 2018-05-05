@@ -1,6 +1,6 @@
 ﻿
 public class BearMinionState: State<BearMinionScript> {
-    public BearMinionState(BearMinionScript playerMinion): base(playerMinion) {
-        this.owner = playerMinion;
+    public BearMinionState(BearMinionScript bearMinion): base(bearMinion) {
+        this.owner = bearMinion;
     }
 }

@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 
-namespace Assets.Source.BearMinion {
-    class BearAttackState {
+public class BearAttackState : BearMinionState {
+    public BearAttackState(BearMinionScript bearMinion) : base(bearMinion) {
     }
 }

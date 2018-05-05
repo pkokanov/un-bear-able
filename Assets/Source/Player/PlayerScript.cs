@@ -73,12 +73,10 @@ public class PlayerScript : MonoBehaviour, Damageable {
         attackRange = swordTransform.position.x - transform.position.x;
     }
 
-    // Use this for initialization
     void Start() {
         transform.position += new Vector3(0, 0, transform.position.y - transform.position.z - height/2);
     }
 
-    // Update is called once per frame
     void Update() {
         stateMachine.Update();
     }
